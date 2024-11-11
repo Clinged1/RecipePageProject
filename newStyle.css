@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+/* Root */
+:root {
+
+  --clr-Stone-100: #f3e6d8;
+  --clr-Stone-150: #e4ded8;
+  --clrStone-600: #5f574e;
+  --clr-Stone-900: #302d2c;
+  --clr-Brown-800: #854632;
+  --clr-Rose-800: #7b284f;
+  --clr-Rose-50: #fff5fa;
+
+
+  --ff-main: "Young Serif", serif;
+  --ff-main-2: "Outfit", serif;
+
+  --fs-body: 1.125rem;
+  --fs-heading: 1.75rem;
+
+  --ff-400: 400;
+  --ff-500: 500;
+  --ff-500: 600;
+  --ff-500: 700;
+  --padding-ingredients: 
+
+
+} 
+
+/* Change Default/Reset */
+*, *::before, *::after {
+
+  box-sizing: border-box;
+
+
+  ul li::marker {
+  color: var(--clr-Rose-800);
+}
+
+
+
+
+
+}
+
+hr {
+  border: none;
+  height: 0.5px; /* Sets thickness to half a pixel */
+  background-color: #333;
+}
+
+
+section {
+  width: 45vw;
+  height: inherit 90%;
+  flex-direction: column;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  
+
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: var(--ff-main-2);
+
+ 
+
+
+  
+}
+
+body {
+  background-color: var(--clr-Stone-100);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  height: 250vh;
+
+
+  
+}
+
+
+#recipe-page-image {
+  width: 40vw;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: inherit 90%;
+  border-radius: 0.5rem;
+
+}
+
+#recipe-page-header h1{
+  font-family: Young Serif;
+  font-size: 2.1rem;
+ 
+  
+}
+
+#recipe-page-header p{
+  color: var(--clrStone-600);
+  font-size: 0.88rem;
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: Young Serif;
+}
+
+ul li {
+  text-indent: 1rem; /* Adjust as needed */
+}
+ol li {
+  text-indent: 1.5rem; /* Adjust as needed */
+  list-style-position: outside; /* Keeps the marker outside of the padding */
+}
+
+/* Preparation */
+
+#recipe-page-preparation {
+  padding: 1rem;
+  background-color: var(--clr-Rose-50);
+  color: var(--clrStone-600);
+  border-radius: 1rem;
+}
+
+#recipe-page-preparation ul{
+  line-height: 2em;
+}
+
+#recipe-page-preparation h3{
+  color: var(--clr-Rose-800);
+  padding-left: 1rem;
+}
+
+/* Ingredients */
+#recipe-page-ingredients ul{
+  line-height: 2em;
+  color: var(--clrStone-600);
+  font-size: 1rem;
+  padding: 1rem;
+
+}
+
+
+
+#recipe-page-ingredients h2{
+  color: var(--clr-Brown-800); 
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+ ol{
+  font-size: 1rem;
+  padding: 1rem;
+  color: var(--clrStone-600);
+  margin-top: 0;
+  
+}
+
+#recipe-page-ingredients li::marker {
+  color: var(--clr-Brown-800);
+  }
+
+  #recipe-page-ingredients ul {
+    margin: 0;
+  }
+
+#recipe-page-instructions li::marker {
+  color: var(--clr-Brown-800);
+  
+}
+
+
+#recipe-page-instructions h2{
+  color:var(--clr-Brown-800) ;
+  margin-bottom: 0;
+
+}
+
+#recipe-page-instructions li{
+  text-indent: 0rem;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+
+}
+
+#recipe-page-nutrition {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+
+
+  
+}
+
+.recipe-page-content-title {
+color:var(--clr-Brown-800);
+font-family: var(--ff-main);
+}
+
+.recipe-page-content-title p{
+  color:var(--clrStone-600);
+  font-family: var(--ff-main-2);
+  font-size: 0.9rem;
+  }
+
+#recipe-page-nutrition p{
+  padding-left: 2rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  color: var(--clr-Brown-800);
+}
+
+#recipe-page-nutrition hr{
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  section {
+
+    border-radius: 0;
+    height: 100%;
+    width: 100vw;
+    padding: 1.5rem;
+    padding-top: 0;
+
+  }
+
+  #recipe-page-preparation {
+    padding: 0rem;
+    background-color: var(--clr-Rose-50);
+    color: var(--clrStone-600);
+    border-radius: 1rem;
+    font-size: 0.875rem;
+
+  }
+
+  #recipe-page-header {
+    padding-top: 48%;
+  }
+
+  body {
+    padding: 0;
+    background-color: white;
+    height: 100%;
+
+  }
+
+  img {
+    border-radius: 0;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+
+  }
+  
+
+
+
+  
+}
+
+@media screen and (min-width: 480px) and (max-width: 750px) {
+
+  section {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+
+  section {
+    width: 55vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
